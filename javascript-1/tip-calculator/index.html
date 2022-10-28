@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <h1>Javascript Tip Calculator</h1>
+    <div>
+      <label for="amount">Enter your bill amount</label>
+      <input type="number" name="amount" id="amount" value="0" />
+      <label for="tip_percentage">Enter the tip percentage</label>
+      <input
+        type="number"
+        name="tip_percentage"
+        id="tip_percentage"
+        value="0.15"
+        disabled
+      />
+      <button onclick="runCalculator()">Submit</button>
+    </div>
+    <p>Your total is: <span id="total"></span></p>
+  </body>
+</html>
