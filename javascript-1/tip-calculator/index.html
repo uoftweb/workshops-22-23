@@ -4,25 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Tip Calculator</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="https://kit.fontawesome.com/9306cde46d.js" crossorigin="anonymous"></script>
     <script defer src="script.js"></script>
   </head>
   <body>
-    <h1>Javascript Tip Calculator</h1>
-    <div>
+    <div class="container">
+      <div class="title">
+      <h1>Tip Calculator</h1>
+      <p>UofT Web Workshop</p>
+      </div>
+      <div class="amount">
       <label for="amount">Enter your bill amount</label>
       <input type="number" name="amount" id="amount" value="0" />
+      </div>
+      <div class="amount">
       <label for="tip_percentage">Enter the tip percentage</label>
+        <div>
       <input
         type="number"
         name="tip_percentage"
         id="tip_percentage"
-        value="0.15"
+        value="15"
         disabled
       />
-      <button onclick="runCalculator()">Submit</button>
+        <i class="fa-solid fa-percent"></i>
+        </div>
+      </div>
+      <button onclick="runCalculator()">Calculate</button>
+
+      <p>Your total is: <span id="total"></span> <i class="fa-solid fa-dollar-sign"></i></p>
     </div>
-    <p>Your total is: <span id="total"></span></p>
   </body>
 </html>
