@@ -40,7 +40,7 @@ function setTotal(total) {
 function runCalculator() {
   const amount = getAmountInput();
   if (amount) {
-    const total = calculateTip(amount, TIP_PERCENTAGE);
+    const total = calculateTip(amount, TIP_VALUE);
     setTotal(total);
   }
 }
