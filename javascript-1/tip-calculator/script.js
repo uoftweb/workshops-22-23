@@ -1,4 +1,4 @@
-const TIP_PERCENTAGE = 0.15;
+const TIP_VALUE = 15;
 
 /**
  * UOFT WEB JS WORKSHOP I: TIP CALCULATOR
@@ -28,7 +28,7 @@ function getTipPercentage() {}
  * @param {number} tip_percentage The percentage tip to add to the bill
  * @returns {number} Total to pay including tip
  */
-function calculateTip(amount, tip_percentage) {}
+function calculateTip(amount, tip_val) {}
 
 /**
  * Display the calculated total on the site (in the <span> tag with id: 'total')
