@@ -1,4 +1,4 @@
-const TIP_PERCENTAGE = 0.15;
+const TIP_VALUE = 15;
 
 /**
  * Get the amount to pay from the amount input value
@@ -16,11 +16,11 @@ function getAmountInput() {
 /**
  * Calculate and return the total to be paid (amount + tip) based on given tip percentage
  * @param {number} amount The base amount to be paid
- * @param {number} tip_percentage The percentage tip to add to the bill
+ * @param {number} tip_value The percentage tip to add to the bill
  * @returns {number} Total to pay including tip
  */
-function calculateTip(amount, tip_percentage) {
-  return amount * (1 + tip_percentage);
+function calculateTip(amount, tip_value) {
+  return amount * (1 + tip_value / 100);
 }
 
 /**

@@ -25,7 +25,7 @@ function getTipPercentage() {}
 /**
  * Calculate and return the total to be paid (amount + tip) based on given tip percentage
  * @param {number} amount The base amount to be paid
- * @param {number} tip_percentage The percentage tip to add to the bill
+ * @param {number} tip_val The percentage tip to add to the bill
  * @returns {number} Total to pay including tip
  */
 function calculateTip(amount, tip_val) {}
